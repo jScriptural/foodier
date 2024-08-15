@@ -1,0 +1,44 @@
+@import "colors";
+@import "breakpoints";
+@font-face {
+  font-family: Redhat-regular;
+  src: url("/fonts/static/RedHatText-Regular.ttf") format("TrueType")
+   ;
+   font-weight: 400;
+ }
+@font-face {
+  font-family: Redhat-semibold;
+  src: url("/fonts/static/RedHatText-SemiBold.ttf") format("TrueType");
+  font-weight: 600;
+}
+@font-face {
+  font-family:Redhat-bold;
+  src: url("/fonts/static/RedHatText-Bold.ttf") format("TrueType");
+  font-weight: 700;
+}
+:root {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family:"Redhat-regular", system-ui,Avenir, Helvetica, Arial, sans-serif,Avenir,Helvetica;
+  line-height:1.5;
+  background: $rose-100;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*,*::before,*::after {
+  box-sizing:inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+@import  "components/foodcard";
+@import  "components/app";
+@import  "components/cart";

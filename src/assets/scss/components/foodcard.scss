@@ -1,0 +1,90 @@
+#foodcard {
+  //border: 1px solid red;
+  margin-bottom: 2rem;
+  width: 100%;
+ // padding: 5.5vw;
+  figure {
+    width: 100%;
+    position: relative;
+    &>img {
+      border-radius: .55rem;
+    }
+    .active {
+      border: 2px solid $red;
+    }
+    .qty-cta {
+      position: relative;
+      width: 80%;
+      top: -2rem;
+      left: 28.5%;
+     // border: 1px solid green;
+      font-family: "Redhat-semibold";
+      .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .7rem 1.3rem;
+        border-radius: 1.5rem;
+        font-family: redhat-bold;
+        border: 1px solid $rose-400;
+        img {
+          width: 20%;
+          margin-right: 5px;
+        }
+      }
+      .qty {
+        width: 9rem;
+       // border: 1px solid $red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .6rem .4rem;
+        border-radius: 1.5rem;
+        background: $red;
+        button {
+         // width: 2rem;
+          padding: .2rem;
+          border-radius: 50%;
+          border: 1.5px solid $rose-100;
+          background: $red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .incr {
+          margin-right: 5px;
+        }
+        .decr {
+          padding: .4rem .2rem;
+          margin-left: 5px;
+        }
+        .display {
+          color: $rose-50;
+        }
+      }
+    }
+  }
+
+
+  .info {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+    font-family: "Redhat-semibold";
+    .category {
+      font-size: .8rem;
+      font-family: "Redhat-regular";
+      color: $rose-500;
+      opacity: .65;
+    }
+    .name {
+      color: $rose-900;
+
+    }
+    .price {
+      color: $red;
+      font-family: "Redhat-bold";
+    }
+  }
+}

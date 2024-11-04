@@ -1,0 +1,46 @@
+#confirmation {
+  //border: 1px solid red;
+  header {
+    //border: 1px solid green;
+     margin-bottom: 2.5rem;
+    .img-con {
+      margin-top: 1.5rem;
+      width: 20%;
+    }
+    .title {
+      h1 {
+        font-size: 2.2rem;
+        font-family: "redhat-bold";
+        color: $rose-900;
+      }
+      p {
+        color: $rose-400;
+        font-family: "redhat-semibold";
+      }
+    }
+  }
+
+  .item-container {
+    //border: 1px solid blue;
+    background: $rose-100;
+    border-radius: 1rem;
+    .item {
+      border-bottom: 1.5px solid $rose-100;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 20%;
+        border-radius: .5rem;
+      }
+      .detail {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    }
+  }
+
+
+}

@@ -15,18 +15,23 @@ function App() {
 	  <header>
 	    <h1>Dessert</h1>
 	  </header>
+	  {!cartList.submitted && 
 	  <div>
-	  {data.map((item,index)=>(
+	    {data.map((item,index)=>(
 	    <Card key={index} keyValue={index} imgUrl={item.image.mobile} altText={item.name} info={{name: item.name,category: item.category, price: item.price, thumbnail: item.image.thumbnail}} />)
 	  )}
 	  </div>
+	  }
 	</main>
-	<div className="cart">
-	  <Cart />
+	{!cartList.submitted && <div className="cart"> 
+	    <Cart />
 	</div>
+	}
         {cartList.submitted && (<>
         <div className="confirmation">
+	  <div className="container">
 	    <Confirmation />
+	  </div>
 	</div>
 	</>)}
 

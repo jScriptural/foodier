@@ -49,12 +49,7 @@ export default function Cart(props){
 	<figcaption>This is a <em>carbon neutral</em> delivery</figcaption>
       </figure>
       <div className="confirm-order">
-	<button onClick={evt=>
-	  {
-	    cartList.setSubmitted(true);
-	   // window.scrollTo({top: 0,left: 0, behavior: "smooth"});
-	  // document.querySelector("body").style.overflow = "hidden";
-	  }}>Confirm Order</button>
+	<button onClick={evt=>{ cartList.setSubmitted(true);}}> Confirm Order </button>
       </div>
       </>): (
 	<figure className="empty-cart">

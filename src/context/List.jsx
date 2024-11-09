@@ -19,10 +19,14 @@ function CartListProvider({children}){
   }
 
   return (
-    <CartListContext.Provider value={{submitted,setSubmitted,
+    <CartListContext.Provider value={
+      {
+	submitted,
+	setSubmitted,
 	list,
 	setList,
-	removeItem,}}>
+	removeItem,
+      }}>
       {children}
     </CartListContext.Provider>
   );

@@ -7,7 +7,14 @@ import Confirmation from "./components/Confirmation.jsx";
  
 function App() {
   const cartList = useContext(CartListContext);
-
+  
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  },[cartList.submitted])
   return (
     <section id="container">
       

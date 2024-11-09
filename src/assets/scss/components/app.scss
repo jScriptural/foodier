@@ -19,7 +19,7 @@
 
   .confirmation {
     position: absolute;
-    top: 0;
+    animation: slide-up .3s ease-in forwards;
     background: rgba(0,0,0,0.3);
     width: 100%;
     padding: 25vw 0 0 0;
@@ -29,5 +29,15 @@
       border-radius: 1rem 1rem 0 0;
       padding: 1rem 5vw 5vw;
     }
+  }
+}
+
+
+@keyframes slide-up {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
   }
 }
